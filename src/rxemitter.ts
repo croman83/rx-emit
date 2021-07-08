@@ -6,14 +6,6 @@ import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/first';
 import 'rxjs/add/operator/take';
 
-/**
-* RxJs + EventBus
-*
-*
-* @langversion TypeScript 2.0
-* @tiptext
-*
-*/
 export class RxEmitter {
 
     static cache: any = {};
@@ -111,8 +103,8 @@ export class RxEmitter {
         }
     }
 
-    /** 
-    * create cache at emit time 
+    /**
+    * create cache at emit time
     * eventName ->  subject
     */
     private static createChache<T>(eventName: string): ICacheObj<T> {

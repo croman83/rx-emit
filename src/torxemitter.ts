@@ -1,12 +1,3 @@
-/**
-* RxJs + EventBus
-*
-*
-* @langversion TypeScript 2.0
-* @tiptext
-*
-*/
-
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import { ToRxEmitterOperator } from './torxemitteroperator';
