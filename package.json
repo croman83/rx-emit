@@ -1,0 +1,19 @@
+{
+  "name": "rx-emit",
+  "version": "1.0.0",
+  "description": "rx-emit = rxjs + bus",
+  "main": "index.js",
+  "scripts": {
+    "tslint": "tslint -c tslint.json 'src/*.ts'",
+    "compile_es6": "tsc ./src/index.ts -m es2015 --sourceMap --outDir ./dist/es6 --target ES5 -d --diagnostics --pretty --noImplicitAny --noImplicitReturns --noImplicitThis --suppressImplicitAnyIndexErrors --moduleResolution node --noEmitHelpers --lib es5,es2015.iterable,es2015.collection,es2015.promise,dom ",
+    "clean_es6": "shx rm -rf ./dist/es6"
+  },
+  "author": "croman83",
+  "license": "ISC",
+  "devDependencies": {
+    "rxjs": "^5.2.0",
+    "shx": "^0.2.2",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  }
+}
